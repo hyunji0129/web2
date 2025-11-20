@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한샘푸드</title>
+    <script src="https://kit.fontawesome.com/34e8a17930.js" crossorigin="anonymous"></script>
+
+    <style>
+        
+    @font-face {
+    font-family: 'Aggravo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: 'Aggravolight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+    }
+       
+
+        article {
+            background: #e6e9bf;
+            width: 500px;
+            border-radius: 24px;
+        }
+
+        .box {
+            padding: 32px;
+        }
+
+        .flex-box { 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h2 {
+            /* 눈누에서 폰트 가져온거 */
+            font-size: 16px;
+            font-family:'Aggravolight';
+        }
+
+
+        p{
+             /* 눈누에서 폰트 가져온거 */
+            font-size: 24px;
+            
+            font-family:'Aggravo';
+        }
+
+        i {
+            transform: rotate(-45deg);
+        }
+
+        .flex-box > a { 
+            padding: 10px;
+            background: #fff;
+            border-radius: 50%;
+            color: #000;
+            font-size: 10px;
+        }
+
+        .bg-img {
+            background: url(./service_img_04.png);
+            width: 100%;
+            height: 200px;
+            margin: 0;
+            border-radius: 24px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <div class="box">
+                <div class="flex-box">
+                    <h2>위탁급식시스템</h2>
+                    <a href="#">
+                     <!-- 폰트어썸 -->
+                    <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <p>급식업무를 위임받아
+                    <br>
+                    체계적으로 운영하는 급식 서비스
+                </p>
+            </div>
+            <figure class="bg-img"></figure>
+        </article>
+    </section>
+</body>
+</html>

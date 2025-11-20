@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        section {
+            display: flex;
+            height: 900px;
+            width: 100%;
+        }
+
+          
+        img,
+        figure {
+            height: 900px;
+            width: 100%;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+            
+        figure {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .text-box {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            text-align: center;
+        }
+
+        img {
+            transition: 0.3s;
+        }
+      
+            
+   
+    </style>
+</head>
+<body>
+    <section class="menu">
+       <figure>
+        <img src="./2516264753101E6B27.jpg" alt="1">
+        <div class="text-box">
+            <h2>Fabric</h2>
+            <p>기능성 패브릭</p>
+        </div>
+       </figure>
+
+       <figure>
+        <img src="./252F694E53101E6D04.jpg" alt="2">
+        <div class="text-box">
+            <h2>Material</h2>
+            <p>올바른 내장재</p>
+        </div>
+       </figure>
+       
+       <figure>
+        <img src="./26056C4753101E6A2F.jpg" alt="3">
+        <div class="text-box">
+            <h2>F</h2>
+            <p>기능성</p>
+        </div>
+       </figure>
+    </section>
+</body>
+</html>

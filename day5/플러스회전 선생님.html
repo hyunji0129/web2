@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/34e8a17930.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 50px;
+            background: #000;
+            color: #fff;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            padding: 16px;
+            list-style: none;
+        }
+
+        .plus-btn > button {
+            background: none;
+            border: none;
+            color: #fff;
+        }
+
+        .plus-btn > button:hover i {
+            animation: plus-to-close 1s forwards;
+        }
+
+       
+
+
+        @keyframes plus-to-close {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(225deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+        </ul>
+        <div class="plus-btn">
+            <button>
+               <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 100%;
+            overflow: hidden;
+
+        }
+
+        .ani-text {
+            width: max-content;
+            font-size: 150px;
+            animation: roll_text 50s infinite linear ;
+        }
+
+        @keyframes roll_text {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="ani-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur deleniti, eveniet delectus repellat ducimus debitis iusto accusamus sint odit harum animi nobis. Accusamus optio delectus quas maxime odit reiciendis fugiat!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis odio aut at id iure incidunt accusantium eum esse ea, optio corrupti numquam quaerat, harum sit totam veritatis, distinctio quos error.
+            </p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 버튼 각자 꾸미기 */
+
+        ul {
+            width: 1200px;
+            display: flex;
+            overflow: hidden;
+            list-style: none;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        li {
+            min-width: 268px;
+            margin: 0 16px;
+            height: 150px ;
+        }
+
+        button:focus + ul li {
+            animation: slide 3s forwards;
+            animation-timing-function: cubic-bezier(0.82, 0.07, 0.59, 1.26);
+            
+        }
+
+        li:nth-child(1) {
+            background: url(./이미지/1.jpg);
+            background-size: cover;
+        }
+        li:nth-child(2) {
+            background: url(./이미지/2.jpg);
+            background-size: cover;
+        }
+        li:nth-child(3) {
+            background: url(./이미지/3.jpg);
+            background-size: cover;
+        }
+        li:nth-child(4) {
+            background: url(./이미지/4.jpg);
+            background-size: cover;
+        }
+        li:nth-child(5) {
+            background: url(./이미지/5.jpg);
+            background-size: cover;
+        }
+        li:nth-child(6) {
+            background: url(./이미지/6.jpg);
+            background-size: cover;
+        }
+        li:nth-child(7) {
+            background: url(./이미지/7.jpg);
+            background-size: cover;
+        }
+        li:nth-child(8) {
+            background: url(./이미지/8.jpg);
+            background-size: cover;
+        }
+
+        @keyframes slide {
+            5% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-1200px);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <button>
+            다른동물보기 버튼
+        </button>
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+</html>

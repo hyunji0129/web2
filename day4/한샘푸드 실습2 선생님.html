@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article {
+            width: 500px;
+            height: 400px;
+            background: rgb(221, 163, 142);
+            border-radius: 24px;
+            position: relative;
+            overflow: hidden;
+            /* padding: 32px; */
+        }
+
+        img {
+            position: absolute;
+            bottom: -100px;
+            right: 40px;
+            transition: 0.3s;
+        }
+
+        article:hover img {
+            /* transform:translateY(30px); */
+            bottom: -70px;
+        }
+
+        .text_box {
+            margin: 32px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <div class="text_box">
+                <p>10+</p>
+                <p>10가지의 다양한 반찬 제공으로
+                    <br>
+                    한끼의 식사도 정성스럽게</p>
+            </div>
+            <img src="./about_img_03.png" alt="">
+        </article>
+    </section>
+</body>
+</html>
