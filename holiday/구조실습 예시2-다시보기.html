@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgb(206, 112, 101);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 15px;
+        }
+
+
+
+        .menu {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            margin: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .article {
+            border: 1px solid red;
+            margin: 15px;
+        }
+
+        .section {
+            flex-shrink: 0;
+        }
+
+        footer {
+            height: 100px;
+            background:rgb(206, 112, 101) ;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#">menu</a>
+                </li>
+                <li>
+                    <a href="#">menu</a>
+                </li>
+                <li>
+                    <a href="#">menu</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <article class="article">
+                <h2>제목자리입니다.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sed laborum, fugit beatae officia
+                    perferendis, aspernatur accusamus ducimus et 
+                    </p>
+            </article>
+            <article class="article">
+                <h2>제목자리입니다.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sed laborum, fugit beatae officia
+                    perferendis, aspernatur accusamus ducimus et 
+                    </p>
+            </article>
+            <article class="article">
+                <h2>제목자리입니다.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sed laborum, fugit beatae officia
+                    perferendis, aspernatur accusamus ducimus et 
+                   </p>
+            </article>
+            <article class="article">
+                <h2>제목자리입니다.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sed laborum, fugit beatae officia
+                    perferendis, aspernatur accusamus ducimus et 
+                    </p>
+            </article>
+
+            <aside class="aside">
+                <h3>right aside</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, modi laboriosam? Minus
+                    assumenda fuga totam, error perferendis possimus 
+                    </p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>푸터입니다.</footer>
+</body>
+
+</html>
