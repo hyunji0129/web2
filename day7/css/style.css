@@ -1,5 +1,5 @@
 body {
-    background: url();
+    background: url(../fff5e837274046e7a645971dd92e7fd1.jpg);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,7 +7,6 @@ body {
 /* pc헤더 시작 */
 ul {
     display: flex;
-    font-size: 14px;
 }
 
 .pc_header_top > ul {
@@ -31,7 +30,7 @@ ul {
 
 .pc_header_bottom > h1,
 .mo_header > h2 {
-    background: url();
+    background: url(../logo_black-e98fc715585a7f605fb6de8694ddf54d.svg);
     width: 146px;
     height: 26px;
     background-size: cover;
@@ -67,7 +66,7 @@ ul {
 
 /* 모바일 시작 */
 .mo_header {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
@@ -86,18 +85,32 @@ ul {
 
 @media (max-width:1280px) {
     .pc_header_bottom > h1 {
-
+        background: url(../logo_black-e98fc715585a7f605fb6de8694ddf54d.svg);
+        width: 100px;
+        height: 18px;
+        background-size: cover;
     }
-}
+
+    .pc_header_bottom > ul >li > a {
+        font-size: 12px;
+    }
+
+    .header_right_box {
+        gap: 16px;
+    }
+}    
+
 @media (max-width:960px) {
     .mo_header {
         display:flex ;
     }
+
     .pc_header {
         display: none;
     }
+
     body {
-        background: url();
+        background: url(../fff5e837274046e7a645971dd92e7fd1.jpg);
         height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
