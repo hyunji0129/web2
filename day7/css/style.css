@@ -4,6 +4,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 /* pc헤더 시작 */
 ul {
     display: flex;
