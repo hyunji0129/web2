@@ -54,10 +54,20 @@ i:nth-child(3) {
    font-size: 20px;
 }
 
-.center_top {
-    display: flex;
-} 
-
 .right_top > figure > img {
     height: 35px;
+}
+
+main {
+    display: flex;
+}
+
+.content {
+    display: flex;
+}
+
+
+.aside {
+    display: flex;
+    width: 15%;
 }
