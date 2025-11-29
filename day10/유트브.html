@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>유트브 실습</title>
     <script src="https://kit.fontawesome.com/34e8a17930.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
     <header>
@@ -14,7 +16,7 @@
                 <i class="fa-solid fa-bars"></i>
             </figure>
             <h1>
-                <img src="./유트브.jpg" alt="">
+                <img src="./이미지/유트브.jpg" alt="">
             </h1>
         </div>
 
@@ -34,43 +36,124 @@
                <i class="fa-solid fa-ellipsis-vertical"></i>
             </figure>
             <figure>
-                <img src="./로그인.jpg" alt="">
+                <img src="./이미지/로그인.jpg" alt="">
             </figure>
         </div>
     </header>
 
     <main>
-        <section class="content">
-            <article class="box">
-                <iframe width="932" height="524" src="https://www.youtube.com/embed/0eyvWdgx_gk?si=kjYLLVRVVmuI_hnO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        <section class="container">
+            <article class="media">
+                <video src="./263305_tiny.mp4" controls poster="./이미지/가을_일러스트_2023-10-23_오후_5.38.43.png"></video>
             </article>
 
-            <aside class="aside">
-                <figure>
-                    <img src="./1.jpg" alt="">
-                </figure>
-                <div class="text">
-                     <h5>Google Play 게임즈로 오딘을 PC에서</h5>
-                     <p>
-                        <!-- 폰트어썸 -->
-                     </p>
-                     <p>오딘 발할라 라이징| GooglePlay게임즈<br>
-                        에서 PC로 개로운 무한의 탑을 즐기세요
-                    </p>     
-                </div>
-            </aside>
+                <article class="aside_text">
+                    <aside class="aside">
+                        <figure>
+                            <img src="./이미지/1.jpg" alt="광고1" width="150px">
+                         </figure>
+                         <div class="text">
+                            <div class="top_text">
+                                <h3>Google Play 게임즈로 오딘을 PC에서</h3>
+                                    <a href="#">
+                                         <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+                            </div>
+                            <div class="center">
+                                <p>오딘 발할라 라이징| GooglePlay게임즈<br>
+                                에서 PC로 개로운 무한의 탑을 즐기세요
+                                </p> 
+                                <div class="center_text">
+                                    <h4>스폰서</h4>
+                                        <a href="#">
+                                         <i class="fa-solid fa-circle"></i>
+                                        </a>
+                                    <p>Google Play Games</p>
+                                </div> 
+                            </div>    
+                            <div class="bottom_text">
+                                자세히 알아보기
+                            </div>
+                        </div>
+                    </aside>
 
-            <div class="menu">
-                <h2>
+                    <aside class="aside">
+                        <figure>
+                            <img src="./이미지/2.avif" alt="광고1" width="150px">
+                         </figure>
+                        <div class="text">
+                            <div class="top_text">
+                                <h3>[Play List] 뜨거운 여름 밤은 가고,<br>
+                                    가을밤에 든 생각</h3>
+                                    <a href="#">
+                                         <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+                            </div>
+                            <div class="center">
+                                <p>오딘 발할라 라이징| GooglePlay게임즈<br>
+                                에서 PC로 개로운 무한의 탑을 즐기세요
+                                </p> 
+                                <div class="center_text">
+                                    <h4>스폰서</h4>
+                                        <a href="#">
+                                         <i class="fa-solid fa-circle"></i>
+                                        </a>
+                                    <p>Google Play Games</p>
+                                </div> 
+                            </div>    
+                        </div>  
+                    </aside>
+                </article>
+        
+        </section>    
+    </main>    
 
-                </h2>
-                <figure>
-                    <img src="" alt="">
-                </figure>
-                <p></p>
+    <footer>
+        <div class="footer_top">
+            <h1>
+                PLAYLIST 가을밤에 든 생각 | 잔나비, 카더가든, 샘김, 김필
+                <i class="fa-solid fa-ellipsis"></i>
+            </h1>
+        </div> 
+
+        
+        <div class="footer_left">
+            <figure>
+                <img src="./이미지/프로필1.jpg" alt="프로필" width="42px">
+            </figure>
+        </div> 
+        <div class="footer_center"> 
+            <div class="footer1"> 
+                <h2>인디인디 In The Indie</h2>
+                    <p>구독자 17.1만명</p>
+                    <p>구독</p>
+            </div>     
+        </div>  
+        <div class="footer_right">
+            <button>
+                <!-- 좋아요 -->
+                <p>1.5만</p>
+                <!-- 싫어요 -->
+            </button>
+            <button>
+                 <!-- 공유 -->
+                <p>공유</p>
+            </button>
+            <button>
+                <!-- 저장 -->
+                <p>저장</p>
+            </button>
+            <button>
+                <!-- 점점점 -->
+            </button>
+
+
+
+          
             
-            </div>
-        </section>
-    </main>
+            
+        </footer>
+        
+    
 </body>
 </html>
