@@ -4,7 +4,7 @@
 }
 
 body {
-    height: 2000px;
+    height: 1500px;
 }
 
 header {
@@ -79,7 +79,7 @@ video {
 
 
 .aside_text {
-   margin-top: 45px;
+   margin-top: 60px;
 }
 
 .aside {
@@ -201,7 +201,6 @@ footer {
     padding: 5px 10px;
     gap: 8px;
     border-radius: 18px;
-   
 }
 
 .icon1 > button {
