@@ -79,7 +79,7 @@ video {
 
 
 .aside_text {
-   margin-top: 60px;
+   margin-top: 62px;
 }
 
 .aside {
@@ -193,7 +193,7 @@ footer {
 
 .icon1 {
     display: flex;
-    transform: translate(-250px, 30px);
+    transform: translate(-250px, 20px);
     background: #eeecec;
     width: 110px;
     height: 25px;
