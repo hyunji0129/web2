@@ -8,7 +8,7 @@
 <body>
     <script>
         for (let i = 5; i >= 1; i--){
-            for (let j = 1; j <=i; j++){
+            for(let j = 1; j <=i; j++){
                 document.write("👌");  
             }
             document.write("<br>");
@@ -16,7 +16,7 @@
 
         for (let i = 0; i < 7; i++){
             let space = " ";
-            for (let j = 0; j < 7-i; j++){
+            for(let j = 0; j < 7-i; j++){
                 space += " ";
             }
             for(let k = 0; k < (2*i)+1; k++){
@@ -32,13 +32,14 @@
         for (let i = 1; i <= 5; i++){
             table += "<tr>";
             for (let j = 1; j <=5; j++){
-                 table += `<td>${num}</td>`    
+                 table += `<td>${num}</td>`;    
                  num++;
             }
             table += "</tr>";
         }
 
         table += "</table>";
+
         document.write(table);
     </script>
 </body>
