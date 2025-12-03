@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜객체</title>
+</head>
+<body>
+    <script>
+     //   let 변수 = new Date();
+     //   문자형식 : 그대로
+    // let stringDate = new Date("2002-5-31");
+
+     // 숫자형식 : 월 -1 (0부터 시작하기 때문)
+     let numDate = new Date(2002,4,31);
+
+     //날짜관련 메서드
+     //1 .getFullYears() - 연도정보를 가져옴
+     //1 .getFullYears() - 월정보를 가져옴
+     //1 .getFullYears() - 날짜 정보를 가져옴
+     //1 .getFullYears() - 요일정보를 가져옴
+     //1 .getFullYears() - 시간정보를 가져옴
+     //1 .getFullYears() - 분 정보를 가져옴
+     //1 .getFullYears() - 초 정보를 가져옴
+     //1 .getFullYears() - 밀리초 정보를 가져옴
+
+     //날짜정보를 수정할땐
+     //getFullYear => setFullYear
+
+     //현재날짜
+     let today = new Date();
+     let nowMonth = today.getMonth()+1,
+         nowDate = today.getDate(),   
+         nowDay = today.getDay();
+    //하나의 let키워드로 여러개의 변수를 정의할 수 있음 , 로 구분함 
+
+         document.write("<h2>오늘날씨 정보</h2>")
+         document.write(`현재 월 : ${nowMonth} <br>`);
+         document.write(`현재 일 : ${nowDate} <br>`);
+         document.write(`현재 요일 : ${nowDay} <br>`);
+        
+         //월드컵날짜
+         let worldCup = new Date("2002-5.31");
+         let worldCupMonth = worldCup.getMonth()+1,
+             worldCupDate = worldCup.getDate(),
+             worldCupDay = worldCup.getDay();
+        
+         document.write("<h2>월드컵 정보</h2>")
+         document.write(`월드컵 월 : ${worldCup} <br>`);
+         document.write(`월드컵 일 : ${worldCup} <br>`);
+         document.write(`월드컵 요일 : ${worldCup} <br>`);
+             
+    
+         
+    </script>
+</body>
+</html>
