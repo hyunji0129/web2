@@ -7,39 +7,39 @@
 </head>
 <body>
     <script>
-    //    Math.max(숫자1,2,3,4) : 숫자 중 가장 큰값을 변환
-    //    Math.min(숫자1,2,3,4) : 숫자 중 가장 작은값을 변환
+    //    Math.max(숫자1,2,3,4) : 숫자 중 가장 큰값을 변환(최대값)
+    //    Math.min(숫자1,2,3,4) : 숫자 중 가장 작은값을 변환(최소값)
     //    Math.abs(숫자) : 숫자의 절대값 반환(부호제거) 
     //    Math.round(숫자) : 소수점 첫째자리에서 반올림에 정수 변환 
     //    Math.ceil(숫자) : 소수점 첫째자리에서 무조건 올림하여 정수 변환 
     //    Math.floor(숫자) : 소수점 첫째자리에서 무조건 내림하여 정수 변환 
     //    Math.sqrt(숫자) : 숫자의 제곱근값을 변환 
-    //    Math.random() : 0~1사이의 난수를 변환 
+    //    Math.random() : 0~1사이의 난수를 반환 
     //    Math.PI : 원주율  
     //    Math.pow(숫자,제곱값) : 거듭제곱 반환 
 
-    let num = 2.1234;
+    let num = 2.9234;
 
     let maxNum = Math.max(2,1,4,8), 
-        minNum = Math.mix(2,1,4,8), 
+        minNum = Math.min(2,1,4,8), 
         absNum = Math.abs(-10000),
         roundNum = Math.round(num),
         ceilNum = Math.ceil(num),
         floorNum = Math.floor(num),
-        sqrtNum = Match.sqrt(4),
-        randomNum = Match.random(),
-        powNum = Match.pow(2,8)
-        pi = Match.PI;
+        sqrtNum = Math.sqrt(4),
+        randomNum = Math.random(),
+        powNum = Math.pow(2,8),
+        pi = Math.PI;
 
 
     document.write(`max : ${maxNum}<br>`);
     document.write(`min : ${minNum}<br>`);
     document.write(`absNum: ${absNum}<br>`);
     document.write(`roundNum : ${roundNum}<br>`);
-    document.write(`ceildNum : ${ceilNum}<br>`);
-    document.write(`floordNum : ${floorNum}<br>`);
-    document.write(`sqrtdNum : ${sqrtNum}<br>`);
-    document.write(`randomdNum : ${randomNum}<br>`);
+    document.write(`ceilNum : ${ceilNum}<br>`);
+    document.write(`floorNum : ${floorNum}<br>`);
+    document.write(`sqrtNum : ${sqrtNum}<br>`);
+    document.write(`randomNum : ${randomNum}<br>`);
     document.write(`powNum : ${powNum}<br>`);
     document.write(`pi : ${pi}<br>`);
 

@@ -7,11 +7,18 @@
 </head>
 <body>
     <script>
-        document.write("<h1>컴퓨터가 생각하는 동물 맞추기</h1>");
+        document.write("<h1>❤️컴퓨터가 생각하는 동물 맞추기❤️</h1>");
         let animalNum ;
         let animal = prompt("펭귄 고양이 사막여우 중 선택하세요");
+
+        /*
+        animal에 들어온 값이 펭귄과 같다면 animalNum에 1을 대입
+        animal에 들어온 값이 고양이와 같다면 animalNum에 2을 대입
+        animal에 들어온 값이 사막여우와 같다면 animalNum에 3을 대입
+        찾는 값이 없다면 경고확인창을 띄워서 잘못된 값 작성 이라고 알려주기
+        */
       
-        switch(animalNum){
+        switch(animal){
             case "펭귄" : animalNum = 1;
             break;
             
@@ -26,14 +33,17 @@
              
         }
     
-        let randomdNum = Math.ceil(Math.random()*3);
+        let randomNum = Math.ceil(Math.random()*3);
         console.log(animal);
-        console.log(randomdNum);
+        console.log(randomNum);
 
-        if(randomdNum == animalNum){
-            document.write("<p>축하합니다</p>")
-            document.write(`<img src='./animal_img_${random}.webp'>`);
-        }else()
+        if(randomNum == animalNum){
+            document.write("<p>축하합니다👌 컴퓨터가 생각하는 동물을 맞추셨어요</p>");
+            document.write(`<img src='./animal_img_${randomNum}.webp'>`);
+        }else{
+            document.write("<p>아쉽습니다.컴퓨터가 생각하는 동물은!</p>");
+            document.write(`<img src='./animal_img_${randomNum}.webp'>`);
+        }
     </script>
 </body>
 </html>
