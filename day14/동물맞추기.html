@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>컴퓨터가 생각하는 동물 맞추기</h1>");
+        let animalNum ;
+        let animal = prompt("펭귄 고양이 사막여우 중 선택하세요");
+      
+        switch(animalNum){
+            case "펭귄" : animalNum = 1;
+            break;
+            
+            case "고양이" : animalNum = 2;
+            break;
+
+            case "사막여우" : animalNum = 3;
+            break;
+
+            default:
+                alert("잘못된 값 작성");
+             
+        }
+    
+        let randomdNum = Math.ceil(Math.random()*3);
+        console.log(animal);
+        console.log(randomdNum);
+
+        if(randomdNum == animalNum){
+            document.write("<p>축하합니다</p>")
+            document.write(`<img src='./animal_img_${random}.webp'>`);
+        }else()
+    </script>
+</body>
+</html>
