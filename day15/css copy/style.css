@@ -158,6 +158,7 @@ header > p {
     }
 } 
 /*회전텍스트 끝*/
+
 /*리서치박스 시작*/
 .research_box {
     margin: 80px ;
@@ -227,7 +228,7 @@ header > p {
 }
 
 .animation_text > span {
-    border: 3px solid var(--main_red_color);
+    border: 3px solid var(--main_red_bg);
     padding: 0 60px 16px;
     border-radius: 100px;
 }
@@ -273,14 +274,13 @@ header > p {
 
 .more_btn.white {
     color:#fff;
-    border: 1px solid var(--main_red_bg);
-    
+    background: none;
+    border: 1px solid #fff;
 }
 
 .more_btn.white:hover {
     color: var(--main_red_bg);
     background: #fff;
-    border: none;
 }
 /*다이어트섹션 끝*/
 
