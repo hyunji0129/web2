@@ -101,7 +101,7 @@ header > p {
 }
 
 .shack_list > li > img {
-    width: 100%;
+    width: 90%;
 }
 
 .shack_name {
@@ -170,7 +170,7 @@ header > p {
 }
 
 .list_text {
-    width: 560px;
+    width: 450px;
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
