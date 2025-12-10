@@ -39,21 +39,32 @@
         //     컴퓨터가 이겼을때
         // }
 
-        let game = prompt("가위, 바위, 보 중 하나를 입력하세요");
-        if(1 == 가위){
-            document.write(`1 == 가위입니다.`);
-        }else if(2 == 바위){
-            document.write(`2 == 바위입니다.`);
-        }else(3 == 보){
-            document.write(`3 == 보입니다.`);
+        let userChoice = prompt("가위,바위,보 중 택1");
+        let randomNum = Math.ceil(Math.random()*3);
+        console.log(randomNum);
+
+        //임시변수
+        let computerChoice;
+
+        if(randomNum === 1){
+            computerChoice = "가위";
+        }else if(randomNum === 2){
+            computerChoice = "바위";
+        }else{
+            computerChoice ="보";
         }
 
-        if(user == com){
-            document.writeln("비겼습니다.");
-        }else if(user = 1 > com = 3){
-            document.write("당신이 이겼습니다.");
+        if(userChoice === computerChoice){
+            document.write(`<p>비겼습니다! 컴퓨터도${computerChoice}를 냈습니다!</p>`);
+        }else if(
+            (userChoice === "가위" && computerChoice === "보")||
+            (userChoice === "바위" && computerChoice === "가위")||
+            (userChoice === "보" && computerChoice === "바위")
+        ){
+            document.write(`<p>축하합니다! 사용자가 이겼습니다! 컴퓨터는${computerChoice}를 냈습니다!</p>`);
+        }else {
+            ocument.write(`<p>아쉽네요! 컴퓨터가 이겼습니다! 컴퓨터는${computerChoice}를 냈습니다!</p>`);
         }
-
     </script> 
 </body>
 </html>
