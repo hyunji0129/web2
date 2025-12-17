@@ -17,20 +17,20 @@
        let b = 20;
        let c = 30;
        if (a > b) {
-        document.write("1차 관문 조건이 참");
-        if (b > c) {
-            document.write("2차 관문 조건이 참");
-        } else if (b == 30) {
+            document.write("1차 관문 조건이 참");
+            if (b > c) {
+                document.write("2차 관문 조건이 참");
+            } else if (b == 30) {
+                document.write("b는 20");
+            } else {
+                document.write("b는 30과 같지 않다.");
+            }
+        } else if (b == 20) {
             document.write("b는 20");
-        } else {
-            document.write("b는 30과 같지 않다.");
-        }
-    } else if (b == 20) {
-        document.write("b는 20");
-        if (b < c) {
+            if (b < c) {
             document.write("b는 c보다 작습니다.")
-        }
-    } 
+            }
+        } 
 
     //유저 아이디와 비밀번호를 미리 지정해 둔 후
     //사용자에게 id/password를 입력받는다.
@@ -54,7 +54,6 @@
             location.reload();
         }
     }
-
     </script>
 </body>
 </html>
